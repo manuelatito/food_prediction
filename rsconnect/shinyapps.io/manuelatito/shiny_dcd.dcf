@@ -1,0 +1,12 @@
+name: shiny_dcd
+title: shiny_dcd
+username: manuelatito
+account: manuelatito
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13150141
+bundleId: 9302707
+url: https://manuelatito.shinyapps.io/shiny_dcd/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

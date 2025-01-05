@@ -1,0 +1,12 @@
+name: food_prediction
+title: shiny_dcd
+username: manuelatito
+account: manuelatito
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13205944
+bundleId: 9323195
+url: https://manuelatito.shinyapps.io/food_prediction/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,12 @@
+name: traditional_food_prediction
+title: traditional_food_prediction
+username: manuelatito
+account: manuelatito
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13251255
+bundleId: 9324140
+url: https://manuelatito.shinyapps.io/traditional_food_prediction/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

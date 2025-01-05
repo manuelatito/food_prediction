@@ -1,0 +1,102 @@
+# Skin Page
+dashboardPage(skin = "green",
+              
+    # Header
+    dashboardHeader(title = "Food Classification"),
+    
+    # Sidebar
+    dashboardSidebar(
+      sidebarMenu(
+        menuItem(
+          text = "Overview",
+          tabName = "overview",
+          icon = icon("earth-asia")
+        ),
+        menuItem(
+          text = "Classification",
+          tabName = "classification",
+          icon = icon("bowl-food")
+        ),
+        menuItem(
+          text = "Maps",
+          tabName = "maps",
+          icon = icon("map")
+        )  
+      )
+    ),
+    
+    # Dashboard
+    dashboardBody(
+      tabItems(
+        
+        # Tab 1 untuk halaman Overview
+        tabItem(
+          tabName = "overview",
+          fluidPage(
+            h2(tags$b("Dashboard Overview")),
+            br(),
+            div(style = "text-align:justify",
+                p("mengapa membuat dashboard ini",
+                  br()
+                )
+            )
+          ),
+          
+          # fluidRow untuk mengatur infoBox()
+          fluidRow(
+            infoBox(
+              title = "Total Unique Channels", # menampilkan judul pada infobox
+              width = 6, # mengatur ukuran pada infobox
+              color = "black", # mengatur warna pada infobox
+              icon = icon("video") # memberikan icon pada infobox
+            ),
+        
+        # Tab 2 untuk halaman Classification
+        tabItem(
+          tabName = "classification",
+          fluidPage(
+            h2(tags$b("Classification of Indonesia Traditional Food Using Neural Network")),
+            br(),
+            div(style = "text-align:justify",
+                p("This is a dashboard that will provide the name of Indonesia traditional food along with information from images or photos of the food uploaded by the user.
+                This dashboard was developed using Neural Network-based machine learning to be able to make predictions on traditional food images.
+                There are 17 classes of food types that can be predicted in this dashboard, including: Asinan Jakarta, Ayam Betutu, Bika Ambon, Cendol, Gado-Gado, Gudeg, Keladi, Klappertart, Kolak, Kue Lumpur, Nasi Goreng Kampung, Papeda, Rawon Surabaya, Rendang, Sate Ayam Madura, Soerabi, and Soto Ayam Lamongan.",
+                  br()
+                )
+            )
+          ),
+         
+          fluidRow(
+            box(width = 6,
+               
+                
+            ),
+            valueBoxOutput(outputId = "prediction", width = 6),
+            valueBoxOutput(outputId = "course", width = 6),
+            valueBoxOutput(outputId = "tastes", width = 6),
+            valueBoxOutput(outputId = "origin", width = 6)
+          )
+          
+          #akhir tab 2
+        ),
+        
+        # Tab 3 untuk halaman map
+        tabItem(
+          tabName = "maps",
+          fluidPage(
+            box(width = 12,
+                
+                )
+          )
+          #akhir tab 3
+        )
+        
+      )
+      
+     
+    )
+      
+  #akhir dashboardbody
+)         
+)
+)

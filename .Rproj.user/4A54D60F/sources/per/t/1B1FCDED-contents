@@ -1,0 +1,18 @@
+# Mempersiapkan Libraries
+library(shiny)
+library(shinydashboard)
+library(leaflet)
+
+library(reticulate)
+library(dplyr)
+library(tidyverse)
+library(imager)
+library(keras)
+library(tensorflow)
+library(caret)
+
+# Use python in your anaconda3 environment folder
+reticulate::use_python("C:/Users/hp/miniconda3/envs/tf_image", required = T)
+
+# Membaca Data
+info <- read.csv("food_info.csv")

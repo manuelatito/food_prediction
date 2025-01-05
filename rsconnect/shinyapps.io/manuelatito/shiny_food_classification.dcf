@@ -1,0 +1,12 @@
+name: shiny_food_classification
+title: shiny_food_classification
+username: manuelatito
+account: manuelatito
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13369057
+bundleId: 9446405
+url: https://manuelatito.shinyapps.io/shiny_food_classification/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

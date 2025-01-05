@@ -1,0 +1,28 @@
+function(input, output) {
+  
+  # mengeluarkan data course (jenis makanan) dari gambar yang sudah di-upload oleh user
+  output$course <- renderValueBox({
+    valueBox(value = "dessert", subtitle = "Course",
+             color = "maroon", 
+             icon = icon("cheese"))
+  })
+  
+  # mengeluarkan data rasa dari gambar yang sudah di-upload oleh user
+  output$tastes <- renderValueBox({
+   
+    valueBox(value = "sweet", subtitle = "Tastes",
+             color = "yellow", 
+             icon = icon("face-grin-stars"))
+  })
+  
+  # mengeluarkan data daerah asal dari gambar yang sudah di-upload oleh user
+  output$origin <- renderValueBox({
+   
+    valueBox(value = "Surabaya", subtitle = "Origin",
+             color = "purple", 
+             icon = icon("city"))
+  })
+
+  
+  
+}

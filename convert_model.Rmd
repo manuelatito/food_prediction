@@ -1,0 +1,25 @@
+---
+title: "convert_model"
+author: "tito"
+date: "2024-11-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(keras)
+```
+
+
+```{r}
+model_tf <- load_model_tf("finalmodel")
+```
+
+```{r}
+save_model_hdf5(model_tf, "finalmodel.h5")
+```
+
